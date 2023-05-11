@@ -1,2 +1,2 @@
-# leetcode.com.problems
-leetcode.com.problems
+# pratising leetcode Problems
+https://leetcode.com/problemset/all/
