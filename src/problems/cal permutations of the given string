@@ -18,3 +18,21 @@
  *  for i ==> 1    b      ac        ""         \
  *  for i ==> 2    c      ab        ""          \
  */
+
+
+
+const calculatePermitation=(arg)=>{
+    if(arg.length<=1) return arg;
+    let res=[];
+    const callback=(str, permitation)=>{
+      if(str==""){ res.push(permitation);  return }
+      for(let i=0;i<str.length;i++){
+        let char=str[i];
+        let remainingChar=str.slice(0,i)+str.slice(i+1);
+        callback(remainingChar,permitation+char) 
+      }
+    }
+    callback(arg,"")
+    return res;
+}
+console.log(calculatePermitation("abc"))
