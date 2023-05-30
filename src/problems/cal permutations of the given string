@@ -1,0 +1,20 @@
+
+
+
+
+/**
+ *                                                                                                                                                   
+ *                                                                                                                                                   
+ *                                                                                                                                                   
+ *                                                                                                                                               char =="" so return abc    
+ *                                                                                                                                             /       
+ *                                                                                                                                           /              
+ *                                                                                                   loop         char remaining  permutation 
+ *                                                                                                /  for i=0       c       ""          ab
+ *                                                 loop         char remaining  permutation      /
+ * input ==> abc                                / for i=0        b        c         a        ---
+ *  loop         char remaining  permutation   /  for i=1        c        b         a
+ *  for i ==> 0    a      bc        ""      ---
+ *  for i ==> 1    b      ac        ""         \
+ *  for i ==> 2    c      ab        ""          \
+ */
