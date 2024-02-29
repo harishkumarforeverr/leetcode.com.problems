@@ -8,7 +8,7 @@ for (let i = 0; i < arr.length; i++) {
   } else {
     leftArr.push(arr[i]);
   }
-} 
+}
 let j = 0;
 for (let i = 0; i < leftArr.length; i++, j++) {
   arr[j] = leftArr[i];
@@ -16,4 +16,3 @@ for (let i = 0; i < leftArr.length; i++, j++) {
 for (let i = 0; i < rightArr.length; i++, j++) {
   arr[j] = rightArr[i];
 }
- 
